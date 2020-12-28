@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yair25.storiesview">
+
+    <application>
+
+        <activity android:name=".StoryEditorActivity"/>
+        <activity android:name=".StoryViewerActivity" />
+    </application>
+
+</manifest>

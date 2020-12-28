@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserStoryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+        <com.yair25.storiesview.StoryView
+            android:id="@+id/storyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/storyMessageView" />
+
+        <com.yair25.storiesview.UserStoryTimerView
+            android:id="@+id/storyTimerView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_alignParentTop="true" />
+
+        <include
+            android:id="@+id/storyCloseFriendsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            layout="@layout/story_close_friends_label"
+            android:layout_below="@+id/storyTimerView"
+            android:layout_alignParentEnd="true" />
+
+        <include
+            android:id="@+id/storyInfoView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/story_info_view"
+            android:layout_below="@+id/storyTimerView" />
+
+        <include
+            android:id="@+id/storyMessageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/story_message_view"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>

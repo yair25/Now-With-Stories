@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="stories_view_desc">Stories</string>
+    <string name="story_item_desc">User Story</string>
+    <string name="story_desc">Story</string>
+    <string name="title_activity_story_editor">StoryEditorActivity</string>
+
+    <string name="story_send_message_hint">Send Message</string>
+
+    <string name="story_username">User Name</string>
+    <string name="story_time">Now</string>
+    <string name="story_close_friends">Close Friends</string>
+
+
+</resources>
